@@ -10,8 +10,8 @@ Route::get('/about', function () {
     return view('about',['title' => 'About Page','name' => 'NOFFRIZAL']);
 });
 
-route::get('/blog', function () {
-    return view('blog',['title' => 'Blog Page', 'posts'=>[
+Route::get('/posts', function () {
+    return view('posts',['title' => 'Blog Page', 'posts'=>[
         [
             'title' => 'Judul Artikel 1',
             'author' => 'Noffrizal Zaim',
@@ -25,6 +25,6 @@ route::get('/blog', function () {
     ]]);
 });
 
-route::get('/contact', function () {
+Route::get('/contact', function () {
     return view('contact',['title' => 'Contact Page']);
 });
